@@ -12,7 +12,8 @@ nav {
     z-index: 10;
 }
 .logo {
-    width: 180px;
+    width: 120px;
+    padding: 6px;
 }
 
 nav ul li {
@@ -35,7 +36,8 @@ nav ul li {
 
 @media (max-width: 1000px) {
     .logo{
-        width: 140px;
+        width: 90px;
+        padding: 0;
     }
 
     nav ul li {
