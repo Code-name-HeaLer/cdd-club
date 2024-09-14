@@ -3,6 +3,11 @@ import './Hero.css'
 import dark_arrow from '../../assets/dark-arrow.png'
 
 const Hero = () => {
+
+  const handleClick = () => {
+    window.location.href = 'https://google.com'; // Replace with your desired URL
+  };
+
   return (
     <div className='hero container'>
         <div className="hero-text">
@@ -11,7 +16,7 @@ const Hero = () => {
             with knowledge, skills, and experirnce neede to excel in
             the dynamic field of education    
             </p>
-            <button className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
+            <button onClick={handleClick} className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
         </div>
       
     </div>
