@@ -27,14 +27,12 @@
 
 .slider ul {
     display: flex;
-    width: 200%;
-    overflow-x: hidden;
     transition: 0.5s;
 }
 
 .slider ul li {
     list-style: none;
-    width: 50%; /* For desktop view, 2 cards at once */
+    flex: 0 0 50%; /* For desktop view, 2 cards at once */
     padding: 20px;
 }
 
@@ -44,6 +42,7 @@
 
 .project {
     position: relative;
+    overflow: hidden;
 }
 
 .project img {
@@ -71,10 +70,10 @@
     transition: 0.4s;
 }
 
-.caption span {
-    font-size: 16px; /* Adjust font size */
-    font-weight: 600; /* Ensure visibility */
-    color: black; /* Make sure the text is white */
+.caption p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
     margin-top: 10px;
     text-align: center;
 }
@@ -90,9 +89,8 @@
     padding-top: 0;
 }
 
-/* ----- Media queries ----- */
+/* Media queries */
 
-/* For tablets and smaller devices */
 @media (max-width: 800px) {
     .projects {
         padding: 0 40px;
@@ -108,14 +106,9 @@
     }
 }
 
-/* For mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
-    .slider ul {
-        width: 400%; /* Adjust for showing 1 card at a time */
-    }
-
     .slider ul li {
-        width: 100%; /* Only one card visible at a time */
+        flex: 0 0 100%; /* Only one card visible at a time */
     }
 
     .next-btn, .back-btn {
