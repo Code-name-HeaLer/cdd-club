@@ -13,8 +13,8 @@ const About = ({setPlayState}) => {
                 }} />
             </div>
             <div className="about-right">
-                <h3>ABOUT UNIVERSITY</h3>
-                <h2>Nurturing Tomorrow's Leaders Today</h2>
+                <h3>ABOUT OUR CLUB</h3>
+                <h2>Your all in one stop for everything TECH</h2>
                 <p>Embark on a transformative educational journey with our 
                 、EDUs university's comprehensive education programs. 
                 Our cutting-edge curriculum is designed to empower students 
