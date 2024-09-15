@@ -11,10 +11,13 @@ const Hero = () => {
   return (
     <div className='hero container'>
         <div className="hero-text">
-            <h1>We Ensure better education for a better world</h1>
-            <p>our Cutteing-edge curriculum is designed to empower students
-            with knowledge, skills, and experirnce neede to excel in
-            the dynamic field of education    
+            <h1>Where Code Meets Creativity, Magic Happens</h1>
+            <p>At CDD Club, we are passionate about pushing the 
+              boundaries of technology and creativity. Our club 
+              is a vibrant community of developers, designers, 
+              and tech enthusiasts who come together to explore 
+              the latest trends, tools, and techniques in coding, 
+              design, and development.   
             </p>
             <button onClick={handleClick} className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
         </div>

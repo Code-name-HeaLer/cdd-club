@@ -1,31 +1,49 @@
 .hero {
+    position: relative; /* Relative positioning for the pseudo-element */
     width: 100%;
     min-height: 100vh;
-    background:linear-gradient(rgba(71, 86, 220, 0.3), rgba(71, 86, 220, 0.3)), url('../../assets/back.jpg');
-    background-size: cover;
-    background-position: center;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Extend beyond the edges */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: /* linear-gradient(rgba(90, 103, 221, 0.3), rgba(90, 103, 221, 0.3)),*/ 
+    url('../../assets/bg1.jpg');
+    background-color: transparent; /* Background with gradient and image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Apply the blur effect */
+    z-index: -1; /* Keep the background behind the text */
 }
 
 .hero-text {
+    position: relative; /* Position text relative to the container */
+    z-index: 1; /* Ensure text appears above the blurred background */
     text-align: center;
     max-width: 800px;
-
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 60px;
     font-weight: 600;
 }
 
-.hero-text p{
+.hero-text p {
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
 }
+
+
 
 /* ----- Media queries ----- */
 
