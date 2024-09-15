@@ -1,0 +1,126 @@
+.projects {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%; /* For desktop view, 2 cards at once */
+    padding: 20px;
+}
+
+.slide {
+    position: relative;
+}
+
+.project {
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.caption span {
+    font-size: 16px; /* Adjust font size */
+    font-weight: 600; /* Ensure visibility */
+    color: black; /* Make sure the text is white */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.project:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+}
+
+/* ----- Media queries ----- */
+
+/* For tablets and smaller devices */
+@media (max-width: 800px) {
+    .projects {
+        padding: 0 40px;
+    }
+
+    .next-btn, .back-btn {
+        padding: 10px;
+        width: 35px;
+    }
+
+    .slider ul li {
+        padding: 10px;
+    }
+}
+
+/* For mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .slider ul {
+        width: 400%; /* Adjust for showing 1 card at a time */
+    }
+
+    .slider ul li {
+        width: 100%; /* Only one card visible at a time */
+    }
+
+    .next-btn, .back-btn {
+        top: 50%;
+        padding: 10px;
+        width: 35px;
+    }
+}
