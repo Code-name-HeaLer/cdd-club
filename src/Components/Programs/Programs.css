@@ -10,11 +10,13 @@
     width: 100%;
     border-radius: 10px;
     display: block;
+
 }
 
 .program {
-    flex-basis: 31%;
+    flex-basis: 24%;
     position: relative;
+    margin: 10px;
 }
 
 .caption{
