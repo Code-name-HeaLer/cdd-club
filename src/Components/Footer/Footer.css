@@ -1,30 +1,58 @@
-.footer{
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #797979;
-    padding: 15px 0;
+.footer {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #797979;
+  padding: 15px 0;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.footer ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
+.footer p {
+  margin: 0;
+  font-size: 14px;
 }
 
-/* ----- Media queries ----- */
-@media (max-width: 600px){
-    .footer{
-        display: block;
-        text-align: center;
-    }
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-    .footer ul li{
-        margin: 10px;
-    }
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
 
-    .footer ul{
-        margin-top: 10px;
-    }
+.footer ul li img {
+  width: 24px; /* Adjust size of icons */
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer ul li img:hover {
+  transform: scale(1.1); /* Add a hover effect for icons */
+}
+
+/* ----- Media queries for responsiveness ----- */
+@media (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer ul li {
+    margin: 10px;
+  }
+
+  .footer ul li img {
+    width: 20px; /* Slightly smaller icons on mobile */
+    height: 20px;
+  }
 }
