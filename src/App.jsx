@@ -17,21 +17,21 @@ const App = () => {
 
   return (
     <div>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       <div className="container">
-        <Title subTitle='OUR Programs' title='What We Offer'/>
-        <Programs/>
-        <About setPlayState={setPlayState}/>
-        <Title subTitle='Gallery' title='Campus Photos'/>
-        <Campus/>
-        <Title subTitle='PROJECTS' title='Check out our Projects'/>
-        <Projects/>
-        <Title subTitle='Contact Us' title='get in Touch'/>
-        <Contact/>
-        <Footer/>
+        <Title subTitle='OUR Programs' title='What We Offer' />
+        <Programs />
+        <About setPlayState={setPlayState} />
+        <Title subTitle='Gallery' title='Club Photos' />
+        <Campus />
+        <Title subTitle='PROJECTS' title='Check out our Projects' />
+        <Projects />
+        <Title subTitle='Contact Us' title='get in Touch' />
+        <Contact />
+        <Footer />
       </div>
-      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+      <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
   )
 }

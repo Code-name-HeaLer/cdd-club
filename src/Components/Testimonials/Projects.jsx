@@ -41,29 +41,31 @@ const Projects = () => {
         slider.current.style.transform = `translateX(${tx}%)`;
     }, [currentSlide, isMobile]);
 
-    return ( 
+    return (
         <div className='projects'>
             <img src={next_icon} alt="Next" className='next-btn' onClick={slideForward} />
             <img src={back_icon} alt="Back" className='back-btn' onClick={slideBackward} />
             <div className="slider">
                 <ul ref={slider}>
+
                     <li>
                         <div className="slide">
                             <div className="project">
                                 <img src={project_1} alt="Project 1" />
                                 <div className="caption">
-                                    <img src={project_icon_1} alt="View Project" />
+                                    <a href="https://github.com/CodingClubPMEC/Web-Dev-Projects"><img src={project_icon_1} alt="View Project" /></a>
                                     <p>Web Dev Projects</p>
                                 </div>
                             </div>
                         </div>
                     </li>
+
                     <li>
                         <div className="slide">
                             <div className="project">
                                 <img src={project_2} alt="Project 2" />
                                 <div className="caption">
-                                    <img src={project_icon_2} alt="View Project" />
+                                    <a href="https://github.com/CodingClubPMEC/App-Dev-Project"><img src={project_icon_2} alt="View Project" /></a>
                                     <p>App Dev Projects</p>
                                 </div>
                             </div>
@@ -74,7 +76,7 @@ const Projects = () => {
                             <div className="project">
                                 <img src={project_3} alt="Project 3" />
                                 <div className="caption">
-                                    <img src={project_icon_3} alt="View Project" />
+                                    <a href="https://github.com/CodingClubPMEC/ML-Dev-Projects"><img src={project_icon_3} alt="View Project" /></a>
                                     <p>AI/ML Projects</p>
                                 </div>
                             </div>
@@ -85,7 +87,7 @@ const Projects = () => {
                             <div className="project">
                                 <img src={project_4} alt="Project 4" />
                                 <div className="caption">
-                                    <img src={project_icon_4} alt="View Project" />
+                                    <a href="https://github.com/CodingClubPMEC/Game-Dev-Projects"><img src={project_icon_4} alt="View Project" /></a>
                                     <p>Game Dev Projects</p>
                                 </div>
                             </div>
