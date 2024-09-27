@@ -10,7 +10,7 @@ import github from '../../assets/footer-icons/github.png'
 const Footer = () => {
     return (
         <div className="footer">
-            <p>&copy; 2024 CDD Club PMEC. All rights reserved</p>
+            <p>Made by Swagat &copy; 2024 CDD Club PMEC. All rights reserved</p>
             <ul>
                 <a href="https://www.instagram.com/cdd_club_pmec/"><li><img src={insta} alt="" /></li></a>
                 <a href="https://www.linkedin.com/company/coding-design-and-development/"><li><img src={linkedin} alt="" /></li></a>
