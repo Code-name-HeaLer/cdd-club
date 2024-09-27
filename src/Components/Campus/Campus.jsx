@@ -7,6 +7,11 @@ import gallery_4 from '../../assets/pic-4.jpeg'
 import white_arrow from '../../assets/instagram.png'
 
 const Campus = () => {
+
+    const handleClick = () => {
+        window.location.href = "https://www.instagram.com/cdd_club_pmec?igsh=MWoyeXRoNXloeGVuMw=="
+    }
+
     return (
         <div className='campus'>
             <div className="gallery">
@@ -15,7 +20,7 @@ const Campus = () => {
                 <img src={gallery_3} alt="" />
                 <img src={gallery_4} alt="" />
             </div>
-            <button className='btn dark-btn'>See More Here <img src={white_arrow} alt="" /></button>
+            <button className='btn dark-btn' onClick={handleClick} >See More Here <img src={white_arrow} alt="" /></button>
         </div>
     )
 }
