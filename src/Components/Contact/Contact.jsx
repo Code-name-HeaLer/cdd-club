@@ -44,9 +44,9 @@ const Contact = () => {
                     univercity community.
                 </p>
                 <ul>
-                    <li><img src={mail_icon} alt="" />Contact@Swagat.com</li>
-                    <li><img src={phone_icon} alt="" />+91 1234567890</li>
-                    <li><img src={location_icon} alt="" />77 Massachusetts Ave, Cambridge <br /> MA 02139, USA</li>
+                    <li><img src={mail_icon} alt="" />codingclubpmec@gmail.com</li>
+                    <li><img src={phone_icon} alt="" />+91 9438299027</li>
+                    <li><img src={location_icon} alt="" />PMEC, Sitalapali<br /> Berhampur, Odisha</li>
                 </ul>
             </div>
             <div className="contact-col">
